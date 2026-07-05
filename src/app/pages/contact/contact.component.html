@@ -1,0 +1,22 @@
+<section class="contact">
+  <div class="container-page contact__inner">
+    <span class="eyebrow" appReveal>Contact Us</span>
+    <h1 class="contact__title" appReveal>Get In Touch</h1>
+
+    <div class="contact__card" appReveal>
+      @for (item of details; track item.label) {
+        <div class="contact__row">
+          <span class="contact__icon"><i class="bi" [class]="item.icon"></i></span>
+          <div class="contact__text">
+            <span class="contact__label">{{ item.label }}:</span>
+            @if (item.href) {
+              <a class="contact__value" [href]="item.href">{{ item.value }}</a>
+            } @else {
+              <span class="contact__value">{{ item.value }}</span>
+            }
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+</section>

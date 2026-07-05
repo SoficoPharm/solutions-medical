@@ -1,0 +1,72 @@
+<section class="hero">
+  <div class="container-page hero__inner">
+    <div class="hero__content" appReveal>
+      <span class="eyebrow"><i class="bi bi-heart-pulse"></i> Medical Services</span>
+
+      <h1 class="hero__title">Solutions Medical Services</h1>
+
+      <p class="hero__arabic" dir="rtl">سوليوشنز للخدمات الطبية</p>
+
+      <p class="hero__desc">
+        Providing innovative medical solutions with quality, reliability, and excellence
+        across the healthcare sector.
+      </p>
+
+      <div class="hero__actions">
+        <a routerLink="/products" class="btn-brand btn-brand--solid">
+          Products <i class="bi bi-arrow-up-right"></i>
+        </a>
+        <a routerLink="/contact" class="btn-brand btn-brand--outline">Contact Us</a>
+      </div>
+    </div>
+
+    <div class="hero__visual" appReveal aria-hidden="true">
+      <svg viewBox="0 0 520 520" class="hero__svg" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="ribbonGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#0f2f6b" />
+            <stop offset="55%" stop-color="#14a6a1" />
+            <stop offset="100%" stop-color="#7fc241" />
+          </linearGradient>
+          <linearGradient id="ringGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#14a6a1" stop-opacity="0.35" />
+            <stop offset="100%" stop-color="#7fc241" stop-opacity="0.15" />
+          </linearGradient>
+        </defs>
+
+        <circle cx="260" cy="260" r="230" fill="#f6f8f9" />
+        <circle cx="260" cy="260" r="184" fill="none" stroke="url(#ringGradient)" stroke-width="1.5" />
+        <circle cx="260" cy="260" r="146" fill="none" stroke="#e8ecef" stroke-width="1" stroke-dasharray="2 6" />
+
+        <!-- brand ribbon motif -->
+        <path class="ribbon-path" d="M300 120 C240 120 220 170 260 205 C300 240 300 290 260 320 C225 346 205 385 235 410"
+          fill="none" stroke="url(#ribbonGradient)" stroke-width="16" stroke-linecap="round" />
+        <circle cx="300" cy="120" r="15" fill="#7fc241" />
+        <circle cx="235" cy="410" r="15" fill="#0f2f6b" />
+
+        <!-- pulse line -->
+        <path class="pulse-path" d="M110 300 h60 l18 -46 22 92 20 -70 14 24 h96"
+          fill="none" stroke="#0f2f6b" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" opacity="0.55" />
+
+        <!-- floating molecule accents -->
+        <g opacity="0.9">
+          <circle cx="392" cy="180" r="7" fill="#14a6a1" />
+          <circle cx="418" cy="150" r="4.5" fill="#7fc241" />
+          <line x1="392" y1="180" x2="418" y2="150" stroke="#14a6a1" stroke-width="2" />
+        </g>
+        <g opacity="0.9">
+          <circle cx="120" cy="150" r="6" fill="#0f2f6b" />
+          <circle cx="150" cy="130" r="4" fill="#14a6a1" />
+          <line x1="120" y1="150" x2="150" y2="130" stroke="#0f2f6b" stroke-width="2" />
+        </g>
+
+        <!-- soft cross badge -->
+        <g transform="translate(360 340)">
+          <rect x="-34" y="-34" width="68" height="68" rx="20" fill="#ffffff" stroke="#e8ecef" />
+          <rect x="-4" y="-18" width="8" height="36" rx="4" fill="#14a6a1" />
+          <rect x="-18" y="-4" width="36" height="8" rx="4" fill="#14a6a1" />
+        </g>
+      </svg>
+    </div>
+  </div>
+</section>
